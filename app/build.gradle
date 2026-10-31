@@ -1,0 +1,8 @@
+plugins { id 'com.android.application' }
+android {
+    compileSdk 31
+    defaultConfig { applicationId 'com.local.appcontrol.demo'; minSdk 26; targetSdk 31; versionCode 1; versionName '1.0.0' }
+    buildTypes { release { minifyEnabled false } }
+    compileOptions { sourceCompatibility JavaVersion.VERSION_11; targetCompatibility JavaVersion.VERSION_11 }
+}
+dependencies { testImplementation 'junit:junit:4.13.2' }
