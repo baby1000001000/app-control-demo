@@ -2,7 +2,7 @@
 
 ## 交付
 
-独立项目 `/Users/huangweizhu/mobile_workspace/app-control-demo`，包名`com.local.appcontrol.demo`，V1.0.0/code1。未修改幻境仓库或覆盖幻境APK。当前MuMu运行端口16384；抖音com.ss.android.ugc.aweme版本36.4.0。
+独立项目（本仓库），包名`com.local.appcontrol.demo`，V1.0.0/code1。未修改幻境仓库或覆盖幻境APK。当前MuMu运行端口16384；抖音com.ss.android.ugc.aweme版本36.4.0。
 
 ## 构建与自动化
 
@@ -37,4 +37,4 @@ Release APK已zipalign、apksigner v1/v2/v3验证；debuggable=false，无INTERN
 
 实体手机与实际重启未测试；开机和改时钟逻辑由纯状态测试覆盖。Android8/9采用ApplicationInfo.FLAG_SUSPENDED读取状态，Android10+使用公开包暂停查询接口，API检查通过。强行停止/卸载/清除Demo数据、撤销闹钟或Root权限会影响恢复，README含手动恢复步骤。
 
-本机证据：`/Users/huangweizhu/Downloads/app-control-demo-20261031/`，含构建/签名/计时日志及系统拦截截图。
+本地验收时保存了构建、签名、计时日志和系统拦截截图。可公开的界面截图见[管控名单](images/managed-app.png)与[系统暂停提示](images/douyin-suspended.png)；完整设备日志未纳入源码仓库。
